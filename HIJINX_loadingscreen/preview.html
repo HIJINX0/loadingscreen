@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIJINX Loading Screen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particles Container -->
+    <div id="particles-container"></div>
+
+    <!-- Background Media Container -->
+    <div id="background-container">
+        <div id="background-media"></div>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo-section">
+            <div class="logo-icon">
+                <img src="media/images/logo.png" alt="HIJINX Scripts" class="logo-img">
+            </div>
+            <div class="logo-text">
+                <h1>HIJINX ROLEPLAY</h1>
+                <p>Red Dead Redemption</p>
+            </div>
+        </div>
+
+        <nav class="top-navigation">
+            <button class="nav-tab active" data-content="updates">
+                <i class="fas fa-bell"></i> Updates
+            </button>
+            <button class="nav-tab" data-content="events">
+                <i class="fas fa-calendar"></i> Events
+            </button>
+            <button class="nav-tab" data-content="newspaper">
+                <i class="fas fa-newspaper"></i> Newspaper
+            </button>
+        </nav>
+
+        <div class="hint-section">
+            <h3>Hint</h3>
+            <p id="hint-text">Press F1 to open the help menu once you've loaded in.</p>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Center Title Section -->
+        <div class="center-section">
+            <h1 class="main-title">HIJINX LOADING SCREEN</h1>
+            <p class="main-description">
+                Welcome to HIJINX Roleplay - An immersive Red Dead Redemption 2 experience.<br>
+                Join our community for authentic Old West roleplay, custom content, and dedicated staff.<br>
+                Your adventure in the frontier awaits.
+            </p>
+            <p class="rdr2-quote" id="rdr2-quote">"We're more ghosts than people." - Arthur Morgan</p>
+        </div>
+
+        <!-- Content Panels -->
+        <div class="content-panel active" id="updates-content">
+            <div class="update-item">
+                <h3>🎉 Server Launch</h3>
+                <p>Welcome to HIJINX Roleplay! We're excited to have you join our community.</p>
+            </div>
+            <div class="update-item">
+                <h3>🔧 Latest Updates</h3>
+                <p>New economy system, custom clothing, and enhanced hunting mechanics added.</p>
+            </div>
+            <div class="update-item">
+                <h3>👥 Community</h3>
+                <p>Join our Discord for whitelist access and to meet fellow players!</p>
+            </div>
+        </div>
+
+        <div class="content-panel" id="events-content">
+            <div class="update-item">
+                <h3>🎪 Weekly Events</h3>
+                <p>Join us every Saturday for community events and special activities.</p>
+            </div>
+            <div class="update-item">
+                <h3>🏆 Tournaments</h3>
+                <p>Upcoming poker tournament this weekend. Grand prize: $5000 in-game!</p>
+            </div>
+        </div>
+
+        <div class="content-panel" id="newspaper-content">
+            <div class="update-item">
+                <h3>📰 The Frontier Gazette</h3>
+                <p>Bank robbery in Valentine! Sheriff's department seeking witnesses.</p>
+            </div>
+            <div class="update-item">
+                <h3>🤠 Wanted</h3>
+                <p>Notorious outlaw "Black Jack" Riley wanted dead or alive. $500 reward.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#" class="social-icon discord" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="#" class="social-icon youtube" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social-icon instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon tiktok" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="social-icon website" title="Website">
+                <i class="fas fa-globe"></i>
+            </a>
+        </div>
+
+        <!-- Loading Progress Bar -->
+        <div class="loading-container">
+            <div class="loading-info">
+                <span class="loading-text">Loading...</span>
+                <span class="loading-percentage" id="loading-percentage">0%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progress-bar-fill">
+                    <div class="horse-icon">💀</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Player (Disabled) -->
+        <div class="music-player" style="display: none;">
+            <div class="album-art">
+                <img src="https://i.imgur.com/9XzFkVb.jpg" alt="Album Art" id="album-art">
+            </div>
+            <div class="music-info">
+                <div class="song-title" id="song-title">House Building Theme</div>
+                <div class="artist-name" id="artist-name">Red Dead Redemption 2 OST</div>
+            </div>
+            <div class="music-controls">
+                <button class="control-btn" id="prev-song"><i class="fas fa-step-backward"></i></button>
+                <button class="control-btn play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+                <button class="control-btn" id="next-song"><i class="fas fa-step-forward"></i></button>
+                <button class="control-btn" id="volume-btn"><i class="fas fa-volume-up"></i></button>
+            </div>
+            <button class="close-all-btn" id="close-all">Close All</button>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
